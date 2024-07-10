@@ -28,33 +28,17 @@
             event.target.removeAttribute("onclick","opr");
             event.target.removeAttribute("class","button");
             event.target.innerHTML = Choice;
-            // if(Choice=="X"){
-            //     event.target.innerHTML = "X";
-
-            // }
-            // else if(Choice=="O"){
-            //     event.target.innerHTML = "X";
-            // }
-            // if(C){
-            //     win.innerHTML = "You Choose Wrong"
-            //     for(i in button){
-            //         button[i].removeAttribute("class","button");
-            //         button[i].removeAttribute("onclick","opr()");
-            //     }
-            // }
+            
             // CONDITION FOR X WINS
             // CONDITION FOR X WINS
-
             checkWin();
 
             //COMPUTER MAKING TURN
             //COMPUTER MAKING TURN
-            
             computerTurn();
             
             //CONDITION FOR O WINS
             //CONDITION FOR O WINS
-
             checkWin();
                 
             }
@@ -66,7 +50,6 @@
                 console.log("computerChoice "+ computerChoice);
                 let computerNum = Math.round(Math.random()*computerChoice);
                 console.log(computerNum)
-                // console.log("computerass "+computerNum );
                 if(Choice=="X"){
                     button[computerNum].innerHTML = 'O';
                 }
@@ -83,7 +66,6 @@
                 button[computerNum].removeAttribute("onclick","opr");
                 button[computerNum].removeAttribute('class','button');
                 computerChoice-=1;
-                // console.log("computerNum "+ computer);
             }
 
             function reset(){
@@ -124,11 +106,9 @@
                                 buttons[i].removeAttribute("onclick","opr");
                             }
                             if(val1 == Choice){
-                                // console.log(val1);
                                 win.innerHTML = "YOU WIN :)";
                             }
                             else{
-                                // console.log(val1);
                                 win.innerHTML = "YOU LOSE :(";
                             }
                         }
